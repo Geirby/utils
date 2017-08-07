@@ -1,0 +1,8 @@
+server=post server,
+port=25
+username=postbox,
+password=pass,
+fromName=name from mail,
+fromEmail=like as username
+path='path_to_dir_with_sh'
+cleanString='for_compare_with_git_status_message'
