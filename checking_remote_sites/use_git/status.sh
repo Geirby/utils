@@ -4,7 +4,7 @@ checkStatus(){
 	gitstatus=`git status`;
 	if [ "$gitstatus" = "$cleanString" ]
 	then echo "Clean"
-	else cd "$path" &&  echo "$gitstatus" | grep modified | awk '{print $2$3}' | xargs php post.php $1
+	else cd "$path/.." &&  echo "$gitstatus" | grep modified | awk '{print $2$3}' | xargs php post.php $1
 	fi
 }
 CONFIG_PATH='./config.ini'
