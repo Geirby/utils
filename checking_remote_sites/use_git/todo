@@ -1,3 +1,5 @@
 todo: add readme for using (with examples)
 todo: add to status.sh removing option for modified or new files
 todo: add to post.php options email_to from config.ini
+todo: add git status | grep -e 'изменено' | awk '{print $2}' | xargs git checkout --
+git status | grep -E 'php|html|ico' | awk '$1' | xargs rm
