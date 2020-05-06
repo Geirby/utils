@@ -1,8 +1,6 @@
 <?php
 $rn = "\r\n";
-$to = "ze-nya@yandex.ru";
-$to = "ilyin@lexpro.ru";
-$to = "xzenya@gmail.com";
+$to = "some_mail@gmail.com";
 $subject = "Предупрежение о заражении";
 
 
@@ -24,7 +22,7 @@ function mailSend($to, $subject, $gitStatus = null)
     $template = implode("<br />", $gitStatus);
     $mailconfig = (object)$mailconfig;
 
-    $localhost = 'ze-nya.myjino.ru';
+    $localhost = 'some.localhost.domain';
     $newLine = "\r\n";
     $timeout = "30";
 
